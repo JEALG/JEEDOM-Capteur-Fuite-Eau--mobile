@@ -1,12 +1,14 @@
 <div style="width:40px;height:55px" class="cmd #history# tooltips cmd-widget" data-type="info" data-subtype="binary" data-cmd_id="#id#" data-cmd_uid="#uid#" data-eqLogic_id="#eqLogic_id#" data-eqLogic_id="#eqLogic_id#" title="#collectDate#">
 <!-- Info Widget
 		Créer par   : ksoul78/rosty
-		Mise à jour : JAG 20190127 20:00 
+		Mise à jour : JAG 20190317 : ajout centrer widget (merci à Antoinekl1)
 	-->
+	<center>
 	<div class="row">
 		<div class="cmdName" id="cmdName#id#" style="font-weight: bold;font-size : 10px; #hideCmdName#;">#name_display#</div>
 		<div class="iconCmd#uid#"></div>
 	</div>
+	</center>
 	<script>
 		jeedom.cmd.update['#id#'] = function(_options){
 			// Options de personnalisation avec valeur par defaut 
