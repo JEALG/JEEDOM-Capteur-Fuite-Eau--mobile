@@ -16,16 +16,18 @@
 			// Options de personnalisation avec valeur par defaut 
                // Paramètrage du logo
                   // Valeur pour ON ou 1
-                      var srcImglogoON	= ('#logoON#'!='#'+'logoON#') ? "#logoON#" : "alarm-Eau-Fibaro-RAS";
+                      	var srcImglogoON		= ('#logoON#'!='#'+'logoON#') ? "#logoON#" : "alarm-Eau-Fibaro-RAS";
+					  	var srcImglogoON_T 	= ('#logoON_type#'!='#'+'logoON_type#') ? "#logoON_type#" : "png";
                   // Valeur pour OFF ou 0
-                      var srcImglogoOFF	= ('#logoOFF#'!='#'+'logoOFF#') ? "#logoOFF#" : "alarm-Eau-Fibaro-Alert";
+                      	var srcImglogoOFF	= ('#logoOFF#'!='#'+'logoOFF#') ? "#logoOFF#" : "alarm-Eau-Fibaro-Alert";
+					  	var srcImglogoOFF_T 	= ('#logoOFF_type#'!='#'+'logoOFF_type#') ? "#logoOFF_type#" : "png";
               // Paramètre "sizehw" : à déclarer en pixels - 80 maxi
-                      var srcImgHeight 	= (is_numeric('#sizehw#')) ? parseFloat('#sizehw#') : 32;
-                      var srcImgWidth	= (is_numeric('#sizehw#')) ? parseFloat('#sizehw#') : 32;
+                     		var srcImgHeight 	= (is_numeric('#sizehw#')) ? parseFloat('#sizehw#') : 32;
+                      	var srcImgWidth		= (is_numeric('#sizehw#')) ? parseFloat('#sizehw#') : 32;
               // Paramétrage des images
-                      var srcImgURL 	= 'plugins/widget/core/template/mobile/cmd.info.binary.Capteur-Fuite-Eau/';
-                      var srcImgOn 		= srcImgURL + srcImglogoON +'.png'; 	// Pour Valeur = 1
-                      var srcImgOff 	= srcImgURL + srcImglogoOFF +'.png';  	// Pour valeur = 0  
+                      	var srcImgURL 		= 'plugins/widget/core/template/mobile/cmd.info.binary.Capteur-Fuite-Eau/';
+					  	var srcImgOn 		= srcImgURL + srcImglogoON +'.' +srcImglogoON_T; 		// Pour Valeur = 1
+					  	var srcImgOff 		= srcImgURL + srcImglogoOFF +'.' +srcImglogoOFF_T;  	// Pour valeur = 0  
           
 			$(".iconCmd#uid#").empty();
 			if (parseInt(_options.display_value) == 1) {
